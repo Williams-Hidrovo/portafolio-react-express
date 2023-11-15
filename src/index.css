@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header h1{
+  margin: 0 !important;
+  padding: 0 !important;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0a192f;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4cc4c098;
+    border-radius: 10px;
+
+  }
+
+  i{
+    cursor: pointer;
+  }
+  i:hover{
+    color: white;
+  }
+  
+  /*loader animation */
+
+  .w{
+    animation: w 1s infinite;
+
+  }
+  @keyframes w {
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+
+    }
+    100%{
+      opacity: 0.5;
+
+    }
+    
+  }
+
+  .h{
+    animation: h 1s infinite;
+
+  }
+  @keyframes h {
+    0%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 1;
+
+    }
+    100%{
+      opacity: 0.5;
+
+    }
+    
+  }
+
+  .b{
+    animation: b 1s infinite;
+
+  }
+  @keyframes b {
+    0%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 0.5;
+
+    }
+    100%{
+      opacity: 1;
+
+    }
+    
+  }
+
+
+  input {
+    height: 40px;
+    border: 1px solid gray;
+    width: 100%;
+    padding-left:20px ;
+  }
+
+  input:focus{
+    outline: none;
+    border: 2px solid rgb(92, 92, 92);
+  }
+  textarea{
+    height: 80px;
+    border: 1px solid gray;
+    width: 100%;
+    padding-left:20px ;
+    resize: none;
+  }
+
+  textarea:focus{
+    outline: none;
+    border: 2px solid rgb(92, 92, 92);
+  }
